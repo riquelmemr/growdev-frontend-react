@@ -1,19 +1,29 @@
 import React from "react";
 
 interface TextInputProps {
+  id: string;
   type: string;
   placeholder: string;
   label: string;
-  className?: string;
+  name: string;
+  showLabel?: boolean;
 }
 
-const TextInput: React.FC<TextInputProps> = ({ type, placeholder, label, className }) => {
+const TextInput: React.FC<TextInputProps> = ({
+  id,
+  type,
+  placeholder,
+  label,
+  name,
+  showLabel,
+}) => {
   return (
+    // Se `ShowLabel` for true, mostra o label, caso contrário não mostra.
     <div>
-      <label>{label}</label>
-      <input type={type} placeholder={placeholder} className={className} />
+      {showLabel && <label htmlFor={id}>{label}</label>}
+      <input type={type} placeholder={placeholder} id={id} name={name} />
     </div>
-  )
-}
+  );
+};
 
 export default TextInput;

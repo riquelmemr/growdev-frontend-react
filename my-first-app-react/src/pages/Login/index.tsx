@@ -6,7 +6,6 @@ const Login: React.FC = () => {
   return (
     <div>
       <Title title={"Login"} />
-      <TextInput type={"email"} placeholder={"Write your email"} label={"E-mail"} className="p-2 rounded-2 ms-2" />
     </div>
   )
 }

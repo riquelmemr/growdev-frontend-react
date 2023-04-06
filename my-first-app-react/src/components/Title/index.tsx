@@ -1,4 +1,5 @@
 import React from "react";
+import Heading from "../../pages/Home/styles";
 
 interface TitleProps {
    title: string;
@@ -6,7 +7,7 @@ interface TitleProps {
 
 const Title: React.FC<TitleProps> = ({ title }) => {
   return (
-    <h1>{title}</h1>
+    <Heading>{title}</Heading>
   )
 }
 
