@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Contador from '../../pages/Contador';
-import Tarefas from '../../pages/Tarefas';
+import Accountant from '../../pages/Accountant';
+import Tasks from '../../pages/Tasks';
 
 const AppRoutes: React.FC = () => {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/contador" element={<Contador />} />
-				<Route path="/tarefas" element={<Tarefas />} />
+				<Route path="/contador" element={<Accountant />} />
+				<Route path="/tarefas" element={<Tasks />} />
 			</Routes>
 		</BrowserRouter>
 	);
