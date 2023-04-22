@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react';
 
 const Accountant: React.FC = () => {
-	// Iniciando o useState
+	// Iniciando o useState do contador
 	const [accountant, setAccountant] = useState(0);
 
 	// Utilização do callback para exibir o estado utilizando a dependência
